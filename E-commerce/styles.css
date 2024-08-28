@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     padding: 0;
     margin: 0;
@@ -172,4 +175,67 @@ nav {
     color: grey;
     width: 50%;
     height: 100px;
+}
+
+
+/* Buy product styling section */
+.product {
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+.producImg {
+    width: 50%;
+}
+.productDetails {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+.productTitle {
+    font-size: 75px;
+    font-weight: 900;
+}
+.productDesc {
+    color: grey;
+    font-weight: 24px;
+}
+.colors, .sizes {
+    display: flex;
+    margin-bottom: 20px;
+}
+.color {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: black;
+    cursor: pointer;
+}
+.color:last-child {
+    background-color: darkblue;
+}
+.size {
+    border: 1px solid black;
+    padding: 5px 20px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.productBtn {
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    /* transition: .5s ease-in-out; */
+}
+.productBtn:hover {
+    color: black;
+    background-color: whitesmoke;
+    /* transform: translateX(100vh); */
 }
